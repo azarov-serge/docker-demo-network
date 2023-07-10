@@ -216,6 +216,7 @@ Add new network-3
 
 ```bash
 docker run --name=network-3 --network=hide-network -d demo-network:latest
+docker inspect bridge
 ```
 
 bridge data (network-3 is not exist)
@@ -273,6 +274,10 @@ bridge data (network-3 is not exist)
 		"Labels": {}
 	}
 ]
+```
+
+```bash
+docker inspect hide-network
 ```
 
 hide-network data (network-3 is exist)
